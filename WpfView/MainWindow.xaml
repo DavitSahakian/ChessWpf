@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfView.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfView"
+        mc:Ignorable="d"
+        Title="Board" Height="500" Width="800">
+
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="450" VerticalAlignment="Top" Width="450" Margin="12,14,0,0" Source="image\ChessBoard.png" Cursor="Cross"/>
+        <Button x:Name="MoveButton" Content="Move" Width="80" Height="80" Margin="271,-215,0,0" Click="MoveButton_Click"/>
+        <TextBox x:Name="letter" HorizontalAlignment="Left" Margin="494,314,0,0" TextWrapping="Wrap" Text="Start Coordinate" VerticalAlignment="Top" Width="120" MouseDoubleClick="letter_MouseDoubleClick"/>
+        <TextBox x:Name="numberBox" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Target Coordinate" VerticalAlignment="Top" Width="120" Cursor="ScrollN" PreviewMouseDoubleClick="numberBox_PreviewMouseDoubleClick" Margin="492,339,0,0"/>
+        <Grid  x:Name="FigureGrid" HorizontalAlignment="Left" Height="500" VerticalAlignment="Top" Width="500" Margin="0,0,0,0">
+
+        </Grid>
+
+    </Grid>
+</Window>

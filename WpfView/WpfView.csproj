@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="image\BBishop.png" />
+    <None Remove="image\BKing.png" />
+    <None Remove="image\BKnight.png" />
+    <None Remove="image\BPawn.png" />
+    <None Remove="image\BQueen.png" />
+    <None Remove="image\BRook.png" />
+    <None Remove="image\ChessBoard.png" />
+    <None Remove="image\WBishop.png" />
+    <None Remove="image\WKing.png" />
+    <None Remove="image\WKnight.png" />
+    <None Remove="image\WPawn.png" />
+    <None Remove="image\WQueen.png" />
+    <None Remove="image\WRook.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Games\Games.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="image\BBishop.png" />
+    <Resource Include="image\BKing.png" />
+    <Resource Include="image\BKnight.png" />
+    <Resource Include="image\BPawn.png" />
+    <Resource Include="image\BQueen.png" />
+    <Resource Include="image\BRook.png" />
+    <Resource Include="image\ChessBoard.png" />
+    <Resource Include="image\WBishop.png" />
+    <Resource Include="image\WKing.png" />
+    <Resource Include="image\WKnight.png" />
+    <Resource Include="image\WPawn.png" />
+    <Resource Include="image\WQueen.png" />
+    <Resource Include="image\WRook.png" />
+  </ItemGroup>
+
+</Project>
